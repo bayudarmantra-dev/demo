@@ -35,3 +35,13 @@ jobs:
           remote_port: 22
           remote_user: ajwsuqxi
           remote_key: ${{ secrets.DEPLOY_KEY }}
+          
+      - name: discord-action
+        # You may pin to the exact commit or the version.
+        # uses: sebastianpopp/discord-action@ba18c5aaa871acf97620c349fd76a187550f12eb
+        uses: sebastianpopp/discord-action@v1.0
+        with:
+          # Discord webhook URL
+          webhook: https://discord.com/api/webhooks/920523247282442241/JvHu1omkXqL-rnd7LuCbVgKvE3u07B5O2gkoaFJCcQEj7YSeoBRzB-N3BMKxdikTfu7S
+          # Message to be sent
+          message: ${{ github.repository }} has been successfullly deployed.
