@@ -31,7 +31,7 @@ jobs:
           switches: -avzr --delete --exclude="" --include="" --filter=""
           path: /
           remote_path: /home/ajwsuqxi/public_html/demo
-          remote_host: darmantra.com
+          remote_host: 178.79.189.85
           remote_port: 22
           remote_user: ajwsuqxi
           remote_key: ${{ secrets.DEPLOY_KEY }}
